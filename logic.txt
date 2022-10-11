@@ -1,0 +1,25 @@
+To solve this, 
+
+We have 10 mice and 1000 doses to check from. We can check this all in one go.
+
+We name mice from 1 to 10 
+We name doses from 1 to 1000
+
+To do this, assume each mice as places in 10 digit binary number. 
+
+0 - got the dose
+1 - did not get the dose
+
+
+                Mice 1  Mice 2  Mice 3  Mice 4  Mice 5  Mice 6  Mice 7  Mice 8  Mice 9  Mice 10
+For dose 1 :        0       0       0       0       0       0       0       0       0       1
+For dose 2 :        0       0       0       0       0       0       0       0       1       0
+For dose 3 :        0       0       0       0       0       0       0       0       1       1
+For dose 4 :        0       0       0       0       0       0       0       1       0       0
+......
+For dose 1000:      1       1       1       1       1       0       1       0       0       0
+
+For instance,
+If Mice 1, 2, 3, 4, 5, 7 got sick then Faulty dose is 1000.
+If only Mice 8 got sick then Faulty dose is 4.
+Likewise, If Mice 9 and 10 got sick then Faulty dose is 3.

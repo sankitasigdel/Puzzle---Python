@@ -1,0 +1,13 @@
+You run a pharmaceutical plant. Your plant supplies vital medicine around the world, and produces batches of 1000 doses every 5 min. 
+You have a spectrometer+AI system that detects if any of the doses in a batch are faulty, and reports which dose is faulty, so that it can be destroyed.
+
+One day, your AI system flags that the most recent batch has **one** faulty dose, but the data about which specific dose was faulty got corrupted, as the system crashed just as this batch was being processed.
+
+As the plant manager, you now have 1000 doses in this batch that can be faulty, but you don't know which one is faulty.
+
+You remember that there is one other way to detect faulty doses -- by testing a tiny amount on mice. If a dose is faulty and you administer a tiny amount to a mouse, you will see side-effects in the mouse. You run to the research wing of the plant, where you find just 10 lab mice. 
+
+You have a 1000 doses, of which just one is faulty, and 10 mice. How would you uniquely identify the dose that is faulty?
+
+**NOTE:**
+As a ruthless plant manager, your time is limited. It is not feasible to give Dose 1 to a mouse and wait for the dose to take effect (~40 mins) and then try out Dose 2, Dose 3 ..... until the mouse dies of the faulty dose.
